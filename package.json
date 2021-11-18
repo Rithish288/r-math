@@ -1,7 +1,7 @@
 {
-  "name": "ritz-math",
-  "version": "1.0.0",
-  "description": "A math object that extends that extends the functionalities of the built math object in javascript",
+  "name": "math-extended",
+  "version": "1.0.1",
+  "description": "A math object that extends the functionalities of the built math object in javascript",
   "main": "./dist/math.js",
   "types": "./dist/math.d.ts",
   "scripts": {
