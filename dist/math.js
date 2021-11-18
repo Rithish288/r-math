@@ -1,6 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.MATH = void 0;
 /**MATH Object */
 const MATH = {
     PI: Math.PI,
@@ -73,4 +70,4 @@ const MATH = {
     sqrt: Math.sqrt,
     log: Math.log,
 };
-exports.MATH = MATH;
+export { MATH };
