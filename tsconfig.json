@@ -102,6 +102,7 @@
     "dist"
   ],
   "exclude": [
-    "dist/exclude.ts"
+    "dist/exclude.ts",
+    "dist/math-interface.ts"
   ]
 }

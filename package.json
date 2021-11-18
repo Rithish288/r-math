@@ -1,5 +1,5 @@
 {
-  "name": "@rithish/r-math",
+  "name": "ritz-math",
   "version": "1.0.0",
   "description": "A math object that extends that extends the functionalities of the built math object in javascript",
   "main": "./dist/math.js",
