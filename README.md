@@ -1,8 +1,8 @@
 # math-extended
-A math object that extends the functionalities of the built math object in javascript
+A math object that extends the functionalities of the built-in math object in javascript
 
 
-math-extended is an extensive math library that has more useful functionalities than JavaScript's built in Math object.
+math-extended is an extensive math library that has more useful functionalities than JavaScript's built-in Math object.
 
 ### Installation:
 
@@ -15,7 +15,7 @@ math-extended is an extensive math library that has more useful functionalities 
 <br/>
 <br/>
 
-<!-- ## Contents:
+## Contents:
 
 - [Properties](#Properties)
 - Methods
@@ -27,4 +27,4 @@ math-extended is an extensive math library that has more useful functionalities 
 
 #### Properties {#Properties}
 
-    MATH.PI // -->
+    MATH.PI //

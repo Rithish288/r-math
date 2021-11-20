@@ -185,9 +185,27 @@ export interface math {
      */
     map(value: number, min: number, max: number, minRange: number, maxRange: number): number;
     /**
+     * Returns a value between 0 and 1 which denotes if the x is closer to value a or value b.
+     * @param a - The first value.
+     * @param b - The second value
+     * @param x - Amount to be interpolated.
+     * This value must be in the range a < x < b.
+     */
+    lerp(a: number, b: number, x: number): number;
+    /**
+     * Limits the value x to the bounds of that min and max values.
+     *
+     * If x is already in the bound, the output is just x.
+     * @param x - The value to be clamped.
+     * @param min - Minumum range of x.
+     * @param max - Maximum range of x.
+     */
+    clamp(x: number, min: number, max: number): number;
+    /**
      * Moves the decimal point to the left by the number of steps.
      *
      * For example an input like (x: 3461.54, steps: 3) will return 3.46154.
+     *
      * @param x - A numberic expression.
      * @param steps - Number of steps to move the decimal point.
      */
