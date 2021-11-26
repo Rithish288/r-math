@@ -12,7 +12,14 @@
     "type": "git",
     "url": "git+https://github.com/Rithish288/r-math.git"
   },
-  "keywords": [],
+  "keywords": [
+    "math",
+    "numbers",
+    "calculations",
+    "mathematics",
+    "functions",
+    "arithmetics"
+  ],
   "author": "Rithish",
   "license": "MIT",
   "bugs": {

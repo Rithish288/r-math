@@ -119,6 +119,33 @@ interface Physics {
         readonly pluto: number;
     };
 }
+interface Logarithms {
+    /**log base 10 of e(a.k.a euler's constant). Approximately 0.434. */
+    readonly log_10ofE: number;
+    /**log base 2 of e(a.k.a euler's constant). Approximately 1.442. */
+    readonly log_2ofE: number;
+    /**
+     * Returns the log of the number x with the specified base.
+     * @param base - The base value of the expression.
+     * @param x - A numeric expression.
+     */
+    log(base: number, x: number): number;
+    /**
+     * Returns the log of x (with base 2).
+     * @param x - A numeric expression.
+     */
+    log2(x: number): number;
+    /**
+     * Returns the log of x (with base 10).
+     * @param x - A numeric expression.
+     */
+    log10(x: number): number;
+    /**
+     * Returns the natural log of x (with base e).
+     * @param x - A numeric expression.
+     */
+    logE(x: number): number;
+}
 export interface math {
     /**∞ - Infinity */
     readonly infinity: number;
@@ -246,6 +273,8 @@ export interface math {
     physics: Physics;
     /**Contains basic Arithmetic functions like addition, subtraction, etc. */
     arithmetics: Arithmetics;
+    /**Contains basic logarithmic functions and properties. */
+    logs: Logarithms;
     /**
      * Returns whether the given number is positive, negative or zero.
      * @param x - A numeric expression to be evaluated.

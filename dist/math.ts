@@ -72,6 +72,14 @@ const MATH: math = {
       pluto: ((6.67408*Math.pow(10, -11) * (1.30900 * 10**22)) / 1188.3 ** 2) / Math.pow(10, 6),
     }
   },
+  logs: {
+    log_2ofE: Math.LOG2E,
+    log_10ofE: Math.LOG10E,
+    logE: Math.log,
+    log2: Math.log2,
+    log10: Math.log10,
+    log: (base: number, x: number) => Math.log10(x) / Math.log10(base)
+  },
   sign: Math.sign,
   sqrt: Math.sqrt,
   log: Math.log,
