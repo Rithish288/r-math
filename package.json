@@ -1,6 +1,6 @@
 {
   "name": "math-extended",
-  "version": "1.0.5",
+  "version": "1.0.8",
   "description": "A math object that extends the functionalities of the built math object in javascript",
   "main": "./dist/math.js",
   "types": "./dist/math.d.ts",
