@@ -20,8 +20,8 @@ const MATH: math = {
   clamp: (x, min, max) => <number> Math.max(min, Math.min(x, max)),
   moveDecimalToLeft: (x: number, steps: number) => Number.isInteger(steps)? <number>x / Math.pow(10, steps) : <void>console.error("INT ERROR:" + " Steps must be an integer!"),
   solveQuadraticEquation: (a: number, b: number, c: number) => {
-    const root1 = (-b + Math.sqrt(b**2 - 4 * a * c)) / 2 * a;
-    const root2 = (-b - Math.sqrt(b**2 - 4 * a * c)) / 2 * a;
+    const root1 = (-b + Math.sqrt((b**2) - 4 * a * c)) / (2 * a);
+    const root2 = (-b - Math.sqrt((b**2) - 4 * a * c)) / (2 * a);
     return {
       root1: root1,
       root2: root2
