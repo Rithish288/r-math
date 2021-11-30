@@ -2,8 +2,8 @@
   "name": "math-extended",
   "version": "2.1.0",
   "description": "A math object that extends the functionalities of the built math object in javascript",
-  "main": "./dist/math.js",
-  "types": "./dist/math.d.ts",
+  "main": "./src/math.js",
+  "types": "./src/math.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
