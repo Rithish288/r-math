@@ -4,21 +4,21 @@ const MATH: math = {
   PI: Math.PI,
   PHI: 218922995834555169026 / 135301852344706746049,
   E: Math.E,
-  infinity: Infinity,
+  INFINITY: Infinity,
   ROOT_2: Math.SQRT2,
   OneByRoot2: Math.SQRT1_2,
   max: Math.max,
   min: Math.min,
   random: Math.random,
-  degToRad: (x: number) => <number>x * MATH.PI/180,
-  radToDeg: (x: number) => <number>(x * 180) / MATH.PI,
+  degToRad: (x: number) => <number>x * Math.PI/180,
+  radToDeg: (x: number) => <number>(x * 180) / Math.PI,
   randomIntFromRange: (min: number, max:number) => <number>Math.random() * (max - min + 1) + min,
   randomIntFromZeroToRange: (range: number) => <number>Math.floor(Math.random() * (range + 1)),
   getDistance: (x1: number, y1: number, x2: number, y2: number) => <number>Math.sqrt(Math.pow(x2-x1, 2) + Math.pow(y2-y1, 2)),
   map: (value: number, min: number, max: number, minRange: number, maxRange: number) => <number>(value - min) / (max - min) * (maxRange - minRange) + minRange,
   lerp: (a: number, b: number, x: number) => <number>a + (b - a) * x,
   clamp: (x, min, max) => <number> Math.max(min, Math.min(x, max)),
-  moveDecimalToLeft: (x: number, steps: number) => Number.isInteger(steps)? <number>x / Math.pow(10, steps) : <void>console.error("INT ERROR:" + " Steps must be an integer!"),
+  moveDecimal: (x: number, steps: number) => Number.isInteger(steps)? <number>x * Math.pow(10, steps) : <void>console.error("INT ERROR:" + " Steps must be an integer!"),
   solveQuadraticEquation: (a: number, b: number, c: number) => {
     const root1 = (-b + Math.sqrt((b**2) - (4 * a * c))) / (2 * a);
     const root2 = (-b - Math.sqrt((b**2) - (4 * a * c))) / (2 * a);
@@ -81,7 +81,6 @@ const MATH: math = {
     log: (base: number, x: number) => Math.log10(x) / Math.log10(base)
   },
   sign: Math.sign,
-  sqrt: Math.sqrt,
-  log: Math.log,
+  sqrt: Math.sqrt
 }
 export {MATH};
