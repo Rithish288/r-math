@@ -148,7 +148,7 @@ interface Logarithms {
 }
 export interface math {
     /**∞ - Infinity */
-    readonly infinity: number;
+    readonly INFINITY: number;
     /**π. This is the ratio of the circumference of a circle to its diameter. */
     readonly PI: Math['PI'];
     /** Φ - The Golden Ratio */
@@ -212,7 +212,7 @@ export interface math {
      */
     map(value: number, min: number, max: number, minRange: number, maxRange: number): number;
     /**
-     * Returns a value between 0 and 1 which denotes if the x is closer to value a or value b.
+     * Returns an interpolated value within the range (a to b) based on the parameter x.
      * @param a - The first value.
      * @param b - The second value
      * @param x - Amount to be interpolated.
@@ -229,14 +229,13 @@ export interface math {
      */
     clamp(x: number, min: number, max: number): number;
     /**
-     * Moves the decimal point to the left by the number of steps.
-     *
-     * For example an input like (x: 3461.54, steps: 3) will return 3.46154.
+     * Moves the decimal point by the number of steps.
+     * A positive no.of steps will move the decimal to the right and a negative no. will move it to the left.
      *
      * @param x - A numberic expression.
      * @param steps - Number of steps to move the decimal point.
      */
-    moveDecimalToLeft(x: number, steps: number): number | void;
+    moveDecimal(x: number, steps: number): number | void;
     /**
      * Return the two roots of the equation in the form of a javascript object.
      * @param a - The coefficient of x^2 and it is not equal to zero.
@@ -285,10 +284,5 @@ export interface math {
      * @param x - A numeric expression.
      */
     sqrt(x: number): number;
-    /**
-     * Return the natural log (base e) of the number.
-     * @param x - A numeric expression.
-     */
-    log(x: number): number;
 }
 export {};

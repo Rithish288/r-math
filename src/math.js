@@ -3,24 +3,24 @@ const MATH = {
     PI: Math.PI,
     PHI: 218922995834555169026 / 135301852344706746049,
     E: Math.E,
-    infinity: Infinity,
+    INFINITY: Infinity,
     ROOT_2: Math.SQRT2,
     OneByRoot2: Math.SQRT1_2,
     max: Math.max,
     min: Math.min,
     random: Math.random,
-    degToRad: (x) => x * MATH.PI / 180,
-    radToDeg: (x) => (x * 180) / MATH.PI,
+    degToRad: (x) => x * Math.PI / 180,
+    radToDeg: (x) => (x * 180) / Math.PI,
     randomIntFromRange: (min, max) => Math.random() * (max - min + 1) + min,
     randomIntFromZeroToRange: (range) => Math.floor(Math.random() * (range + 1)),
     getDistance: (x1, y1, x2, y2) => Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2)),
     map: (value, min, max, minRange, maxRange) => (value - min) / (max - min) * (maxRange - minRange) + minRange,
     lerp: (a, b, x) => a + (b - a) * x,
     clamp: (x, min, max) => Math.max(min, Math.min(x, max)),
-    moveDecimalToLeft: (x, steps) => Number.isInteger(steps) ? x / Math.pow(10, steps) : console.error("INT ERROR:" + " Steps must be an integer!"),
+    moveDecimal: (x, steps) => Number.isInteger(steps) ? x * Math.pow(10, steps) : console.error("INT ERROR:" + " Steps must be an integer!"),
     solveQuadraticEquation: (a, b, c) => {
-        const root1 = (-b + Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / 2 * a;
-        const root2 = (-b - Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / 2 * a;
+        const root1 = (-b + Math.sqrt((Math.pow(b, 2)) - (4 * a * c))) / (2 * a);
+        const root2 = (-b - Math.sqrt((Math.pow(b, 2)) - (4 * a * c))) / (2 * a);
         return {
             root1: root1,
             root2: root2
@@ -77,7 +77,6 @@ const MATH = {
         log: (base, x) => Math.log10(x) / Math.log10(base)
     },
     sign: Math.sign,
-    sqrt: Math.sqrt,
-    log: Math.log,
+    sqrt: Math.sqrt
 };
 export { MATH };

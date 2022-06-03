@@ -4,16 +4,16 @@ A math object that extends the functionalities of the built-in math object in ja
 
 math-extended is an extensive math library that has more useful functionalities than JavaScript's built-in Math object.
 
-![NPM](https://img.shields.io/npm/l/math-extended?color=light&label=license&style=flat-square) ![npm](https://img.shields.io/npm/v/math-extended?label=npm-version&style=flat-square)
-
+![NPM](https://img.shields.io/npm/l/math-extended?color=light&label=license&style=flat-square) ![npm](https://img.shields.io/npm/v/math-extended?label=npm-version&style=flat-square) ![npm type definitions](https://img.shields.io/npm/types/math-extended?style=flat-square) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/rithish288/r-math?style=flat-square)
 ### Installation:
 
     npm i math-extended
 <br/>
 
 ### Import:
-
-    import { MATH } from 'math-extended';
+```ts
+import { MATH } from 'math-extended';
+```
 <br/>
 <br/>
 
